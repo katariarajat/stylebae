@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 100px  auto 70px;
+    grid-template-areas: "header header header"
+                            
+                         "main main main"
+                         "footer footer footer"   ;
+                
+}
+header{
+    grid-area: header;
+    display: inline-block;
+}
+.navbar-brand{
+    margin-left: 25px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    margin-right: 15px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+#login, #register,#user,#card{
+    position: relative;
+    
+  }
+  #login, #register,#user{
+      left: 150px;
+  }
+  #card{
+      left: 250px;
+  }
+  .badge-light{
+      background-color: blue;
+      position: relative;
+      top: -30px;
+  }
+
+main{
+    grid-area: main;  
+    width: 70%;
+    margin: auto;
+}
+.img-container{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.login-container{
+    width: 60%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 40px;
+    height: 330px;
+    border: 1px solid;
+    border-color: rgb(243, 20, 20);
+    text-align: center;
+}
+.login-container .form-control{
+    margin: auto;
+    margin-top: 50px;
+    width: 350px;
+    
+}
+.login-container .btn-primary{
+    margin-top: 15px;
+    width: 150px;
+}
+.pass{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgb(243, 20, 20);
+}
+.regist{
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+footer{
+    grid-area: footer;
+}

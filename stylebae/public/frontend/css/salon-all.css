@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 100px  auto 70px;
+    grid-template-areas: "header header header"
+                            
+                         "main main main"
+                         "footer footer footer"   ;
+                
+}
+header{
+    grid-area: header;
+    display: inline-block;
+}
+.navbar-brand{
+    margin-left: 25px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    margin-right: 15px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+#login, #register,#user,#card{
+    position: relative;
+    
+  }
+  #login, #register,#user{
+      left: 150px;
+  }
+  #card{
+      left: 250px;
+  }
+  .badge-light{
+      background-color: blue;
+      position: relative;
+      top: -30px;
+  }
+main{
+    grid-area: main;  
+    width: 70%;
+    margin: auto;
+}
+main .filter{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+main .form-control{
+    width: 300px;
+    margin-right: 10px;
+}
+main .card{
+    margin-bottom: 10px;
+}
+main .card .card-header{
+    background-color: rgb(46, 45, 45);
+    color: white;
+}
+main .card .right{
+    float: right;
+}
+main .card .card-body{
+    display: flex;
+}
+main .card .card-body .salon-pic{
+    width: 300px;
+    height: 200px;
+}
+main .card .card-body .salon-pic img{
+    width: inherit;
+    height: inherit;
+}
+main .card .btn-secondary{
+    width: 150px;
+    height: 50px;
+    margin: 15px;
+    vertical-align: middle;
+    position: relative;
+    top: 50px;
+}
+ main .card .card-body .info{
+    width: 400px;
+    height: 200px;
+    padding:10px;
+    margin-left: 10px;
+    
+} 
+main .card .card-body .info .info1{
+    height: 50%;
+    border-bottom: 1px solid;
+}
+main .card .card-body .info .info1 h4,
+main .card .card-body .info .info2 h4{
+    display: inline-block;
+    margin-right: 10px;
+}
+main .card .card-body .info .info1 h4,
+main .card .card-body .info .info2 h4,
+main .card .card-body .info .info1 span,
+main .card .card-body .info .info2 span{
+    position: relative;
+    top: 25px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(46, 45, 45);
+    position: relative;
+    
+}
+footer .social{
+    position: absolute;
+    top: 25px;
+    padding-left: 20px;
+    left: 200px;
+} 
+footer .social a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+footer .social span{
+    color: white;
+    margin-left: 100px ;
+    text-align: center;
+}

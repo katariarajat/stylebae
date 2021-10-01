@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 100px  auto 70px;
+    grid-template-areas: "header header header"
+                            
+                         "main main main"
+                         "footer footer footer"   ;
+                
+}
+header{
+    grid-area: header;
+    display: inline-block;
+}
+.navbar-brand{
+    margin-left: 25px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    margin-right: 15px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+#login, #register,#user,#card{
+  position: relative;
+  
+}
+#login, #register,#user{
+    left: 150px;
+}
+#card{
+    left: 250px;
+}
+.badge-light{
+    background-color: blue;
+    position: relative;
+    top: -30px;
+}
+main{
+    grid-area: main;  
+    
+}
+main .container-full{
+    padding: 25px;
+    padding-top: 0px;
+}
+.content h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container-full .box-header{
+    border-bottom: 1px solid;
+}
+.container-full .box-body{
+    padding: 15px;
+}
+.form-group{
+    margin-top: 15px;
+}
+.price{
+    width: 50%;
+}
+#reg{
+    margin-top: 10px;
+    width: 50%;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(46, 45, 45);
+    position: relative;
+    
+}
+footer .social{
+    position: absolute;
+    top: 25px;
+    padding-left: 20px;
+    left: 200px;
+} 
+footer .social a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+footer .social span{
+    color: white;
+    margin-left: 100px ;
+    text-align: center;
+}

@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 100px  auto 70px;
+    grid-template-areas: "header header header header"
+                            
+                         "main main main main"
+                         "footer footer footer footer"   ;
+}
+header{
+    grid-area: header;
+    display: inline-block;
+}
+.navbar-brand{
+    margin-left: 25px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    margin-right: 15px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+#login, #register,#user,#card{
+    position: relative;
+    
+  }
+  #login, #register,#user{
+      left: 150px;
+  }
+  #card{
+      left: 250px;
+  }
+  .badge-light{
+      background-color: blue;
+      position: relative;
+      top: -30px;
+  }
+main{
+    grid-area: main; 
+     
+}
+main h3{
+    position: relative;
+    left: 150px;
+    width: 400px;
+}
+main .cal{
+    margin: auto;
+    margin-top: 30px;
+    width: 50%;
+}
+.cal .cal_input{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+main .time{
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.time h5{
+    text-align: center;
+}
+.time .hour{
+    width: 150px;
+    height: 40px;
+    border: 1px solid;
+    margin: 10px;
+    text-align: center;
+}
+/* .time .morning{
+    display: none;
+} */
+.hour:hover{
+    border-color: rgb(243, 20, 20);
+    color: rgb(243, 20, 20);
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgb(243, 20, 20);
+}
+.hour:active{
+    transform: translateY(3px);
+}
+.time .choose{
+    width:300px;
+    height: 300px;
+    border: 1px solid;
+    position: relative;
+    left: 200px;
+    padding: 6px;
+}
+.choose .form-group{
+    margin-bottom: 15px;
+}
+.choose .form-control{
+    color: black;
+    text-align: center;
+    border: none;
+
+}
+.choose label{
+    position: relative;
+    top: 30px;
+}
+.pay_method{
+    width: 400px;
+height: 200px;
+position: relative;
+top: 320px;
+left: -100px;
+}
+.pay_method table{
+    border: none;
+}
+.pay_method tbody, td, tfoot, th, thead, tr{
+    border-style: none !important;
+}
+.pay_method h5{
+    text-align: center;
+    font-weight: normal;
+}
+.pay_method input[type="radio"]{
+    position: relative;
+    left: 30px;
+}
+#servinp{
+    font-weight: bolder;
+    
+    background-color: white;
+}
+#priceinp{
+    background-color: white;  
+}
+#dateinp,#timeinp{
+    display: none;
+    background-color: white;
+}
+.btn-primary{
+    margin-left: 100px;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(46, 45, 45);
+    position: relative;
+    
+}
+footer .social{
+    position: absolute;
+    top: 25px;
+    padding-left: 20px;
+    left: 200px;
+} 
+footer .social a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+footer .social span{
+    color: white;
+    margin-left: 100px ;
+    text-align: center;
+}

@@ -1,0 +1,81 @@
+main{
+    width: 90% ;
+    margin: auto;
+}
+main .row{
+    width: 100% !important;
+}
+#rev_rat{
+  
+    
+    border-radius: 5px ;
+   
+    background-color: rgb(237, 234, 241);
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.main_img img{
+    width: 100%;
+    height: 50%;
+}
+#img_wrapper{
+    flex-flow: row;
+    margin: auto;
+    margin-top: 2rem;
+}
+#desc_rev_row{
+    margin-top: 2rem;
+}
+.row .multi{
+    width: 25%;
+     
+}
+.row .multi img{
+    width: inherit;
+    
+}
+.box-body{
+    display: -webkit-inline-flex;
+}
+.box-body .staff_img{
+    width: 35%;
+    margin: 1.5rem;
+    border: none;
+
+}
+.box-body .staff_img img{
+    border-radius: 50%;
+   margin-left: 2rem;
+}
+#service{
+    margin-top: 1rem;
+}
+.box-body .staff_img .staff_title, .box-body .staff_img .staff_name{
+    position: relative;
+    left: 2rem;
+    
+}
+.box-body .staff_img .staff_name{
+    top: 0.5rem;
+    
+}
+#btn_desc,#btn_rev{
+    height: 4rem;  
+    width: 100%;
+    margin-bottom: 5px;
+    
+}
+.col-8{
+    overflow: hidden;
+}
+.col-8 p{
+    text-align: justify;
+}
+.col-8 .rev_desc{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#desc{
+    display: block;
+}

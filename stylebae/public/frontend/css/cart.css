@@ -1,0 +1,63 @@
+body {
+    display: grid;
+    grid-template-rows: 100px  auto 70px;
+    grid-template-areas: "header header header header"
+                            
+                         "main main main main"
+                         "footer footer footer footer"   ;
+    background-color: rgb(31, 30, 30);
+background-image: linear-gradient(315deg, black 0%, rgb(31, 30, 30) 74%);
+}
+header{
+    grid-area: header;
+    display: inline-block;
+}
+.navbar-brand{
+    margin-left: 25px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    margin-right: 15px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+#login, #register,#user,#card{
+    position: relative;
+    
+  }
+  #login, #register,#user{
+      left: 150px;
+  }
+  #card{
+      left: 250px;
+  }
+  .badge-light{
+      background-color: blue;
+      position: relative;
+      top: -30px;
+  }
+main{
+    grid-area: main; 
+     
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(46, 45, 45);
+    position: relative;
+    
+}
+footer .social{
+    position: absolute;
+    top: 25px;
+    padding-left: 20px;
+    left: 200px;
+} 
+footer .social a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+footer .social span{
+    color: white;
+    margin-left: 100px ;
+    text-align: center;
+}

@@ -1,0 +1,39 @@
+.col-12{
+    display: flex;
+}
+.col-3{
+    margin-left: 5px;
+}
+.col-3 ul a{
+    width: 70%;
+    text-align: center;
+}
+.logo{
+    margin: auto;
+    width: 20rem;
+    height: 20rem;
+}
+.logo img{
+    width: inherit;
+    height: inherit;
+}
+.box h4{
+    text-align: center;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+#profile_update{
+    margin-top: 10px;
+}
+#profile_update,#Password,#appointment{
+   background-color: 	rgb(32, 31, 31) !important;
+   height: 2.5rem;
+   margin-bottom: 1rem;
+   color: white !important;
+   font-size: 1rem;
+   font-weight: bold;
+   display: inline-block;
+}
